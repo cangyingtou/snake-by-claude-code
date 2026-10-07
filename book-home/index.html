@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>校园图书屋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>校园图书屋</h1>
+  </header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="search.html">检索</a>
+    <a href="#about">关于</a>
+  </nav>
+  <main>
+    <section class="search-bar">
+      <form action="/search" method="get">
+        <label for="kw">书名关键字</label>
+        <input None>
+        <label for="type">图书分类</label>
+        <select id="type" name="type">
+          <option>全部</option>
+          <option>计算机</option>
+          <option>文学</option>
+        </select>
+        <button type="submit">检索</button>
+      </form>
+    </section>
+    <section class="book-area">
+      <h2>新书推荐</h2>
+      <div class="card-list">
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>Python 编程从入门到实践</h3>
+        <p class="author-name">作者：埃里克·马瑟斯</p>
+        <p class="book-price">¥ 89.00</p>
+      </article>
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>深入理解计算机系统</h3>
+        <p class="author-name">作者：兰德尔·布莱恩特</p>
+        <p class="book-price">¥ 139.00</p>
+      </article>
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>编译原理</h3>
+        <p class="author-name">作者：阿尔弗雷德·阿霍</p>
+        <p class="book-price">¥ 59.00</p>
+      </article>
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>计算机网络</h3>
+        <p class="author-name">作者：谢希仁</p>
+        <p class="book-price">¥ 52.00</p>
+      </article>
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>设计模式</h3>
+        <p class="author-name">作者：埃里希·伽玛</p>
+        <p class="book-price">¥ 58.00</p>
+      </article>
+      <article class="book">
+        <div class="cover-box">封面</div>
+        <h3>西游记</h3>
+        <p class="author-name">作者：吴承恩</p>
+        <p class="book-price">¥ 42.00</p>
+      </article>
+      </div>
+    </section>
+    <aside id="about">
+      <section class="side-panel">
+        <h3>分类导航</h3>
+        <ul>
+          <li>计算机</li>
+          <li>文学</li>
+          <li>历史</li>
+          <li>经济管理</li>
+        </ul>
+      </section>
+      <section class="side-panel">
+        <h3>本周热榜</h3>
+        <ol>
+          <li>深入理解计算机系统</li>
+          <li>Python 编程从入门到实践</li>
+          <li>西游记</li>
+          <li>设计模式</li>
+        </ol>
+      </section>
+      <section class="side-panel">
+        <h3>借阅须知</h3>
+        <p>凭校园卡借阅，每人限借 5 本，借期 30 天。</p>
+      </section>
+    </aside>
+  </main>
+  <footer>
+    <p>版权所有 © 2026 校园图书屋</p>
+  </footer>
+</body>
+</html>

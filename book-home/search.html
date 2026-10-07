@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>图书检索</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>校园图书屋</h1>
+  </header>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="search.html">检索</a>
+    <a href="#about">关于</a>
+  </nav>
+  <main>
+    <section class="panel">
+      <h2>图书检索</h2>
+      <form action="/search" method="get">
+        <div class="row">
+          <label for="kw">书名关键字</label>
+          <input None>
+        </div>
+        <div class="row">
+          <label for="type">图书分类</label>
+          <select id="type" name="type">
+            <option>全部</option>
+            <option>计算机</option>
+            <option>文学</option>
+          </select>
+        </div>
+        <div class="row">
+          <button type="submit">检索</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>版权所有 © 2026 校园图书屋</p>
+  </footer>
+</body>
+</html>
